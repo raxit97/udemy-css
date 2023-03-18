@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shadow</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .heading {
+                font-family: Trebuchet MS, sans-serif;
+                font-size: 55px;
+                text-align: center;
+                color: #555;
+                text-shadow: 3px 3px 5px #888;
+            }
+            .card {
+                width: 400px;
+                margin: 100px auto;
+                background-color: #ccc;
+                padding: 5px;
+                text-align: center;
+                box-shadow: 5px 5px 10px #777;
+            }
+            .card:hover {
+                box-shadow: 10px 10px 10px #aaa;
+            }
+            .card img {
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class='heading'>This is a heading with shadow</h1>
+        <div class="card">
+            <img src="../assets/images/image 1.jpeg" alt="image" />
+            <h2>My Class</h2>
+        </div>
+    </body>
+</html>

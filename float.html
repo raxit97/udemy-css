@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Udemy CSS Course</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <style>
+            .container {
+                background-color: #ccc;
+                border-top: 20px solid blue;
+                border-bottom: 20px solid #000;
+                /* overflow: auto; */
+            }
+            .left {
+                background-color: orange;
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+            .right {
+                background-color: green;
+                width: 100px;
+                height: 100px;
+                float: right
+            }
+            /* .clear {
+                clear: both;
+            } */
+            .clearfix::after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container clearfix">
+            <div class="left"></div>
+            <div class="right"></div>
+            <!-- <div class='clear'></div> -->
+        </div>
+    </body>
+</html>

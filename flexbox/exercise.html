@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS session exercise</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                background-color: lightblue;
+                font-size: 2rem;
+                color: #fff;
+            }
+            header, footer, aside, article, .article-content, .image {
+                margin: 10px;
+            }
+            header, footer, aside, .article-content, .image {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            header, footer {
+                height: 70px;
+                background-color: #3daa86;
+            }
+            main {
+                display: flex;
+                height: 700px;
+            }
+            aside {
+                background-color: #21d457;
+                flex-basis: 500px;
+            }
+            article {
+                display: flex;
+                flex-direction: column;
+                background-color: #f58823;
+                flex: 1;
+            }
+            .article-content {
+                background-color: #ebe04f;
+                flex: 1;
+            }
+            .images {
+                display: flex;
+                flex: 1;
+            }
+            .image {
+                background-color: #fbad05;
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>Header</header>
+            <main>
+                <aside>Aside</aside>
+                <article>
+                    <div class="article-content">Article Content</div>
+                    <div class="images">
+                        <div class="image">Image</div>
+                        <div class="image">Image</div>
+                        <div class="image">Image</div>
+                    </div>
+                </article>
+            </main>
+            <footer>Footer</footer>
+        </div>
+    </body>
+</html>
